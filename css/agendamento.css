@@ -1,0 +1,114 @@
+/****************
+*   Agendamento
+*****************/
+
+.agendamento {
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    height: 100vh;
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+
+.agendamento h2 {
+    text-align: center;
+    color: var(--color-primary-light);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.agendamento img {
+    margin: 0 auto;
+    display: block;
+}
+
+.agendamento form {
+    margin-top: 80px;
+}
+
+.agendamento .dados-pessoal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.agendamento .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+}
+
+.agendamento .input-wrapper:last-of-type {
+    margin-right: 0;
+}
+
+.agendamento label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--color-primary-light);
+}
+
+.agendamento .dados-pessoal input,
+.agendamento .dados-pessoal select, 
+.agendamento textarea {
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.agendamento textarea {
+    height: 100px;
+}
+
+.agendamento button {
+    background-color: var(--color-secundary);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/****************
+*  responsividade
+*****************/
+
+@media (max-width: 1110px) {
+
+    .agendamento h2 {
+        font-size: 30px;
+        margin-top: -60px;
+    }
+
+    .agendamento .dados-pessoal {
+        margin-top: -30px;
+        flex-direction: column;
+    }
+
+    .agendamento label {
+        text-align: center;
+    }
+
+    .agendamento .dados-pessoal input,
+    .agendamento .dados-pessoal select{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .agendamento textarea {
+        padding: 10px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .agendamento button {
+        margin-left: 2%;
+    }
+}

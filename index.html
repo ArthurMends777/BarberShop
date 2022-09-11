@@ -11,9 +11,12 @@
 <body>
     
     <section id="home" class="home">
-        <header class="header-home">
-            <nav class="nav-home">
-                <ul>
+        <header class="header-home" id="header">
+            <nav class="nav-home" id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
                     <li>
                         <a href="#home">Home</a>
                     </li>
@@ -23,7 +26,7 @@
                     <li>
                         <a href="#services">Serviços</a>
                     </li>
-                    <li>
+                    <li id="img">
                         <img src="images/logo.png" alt="Logo" class="logo">
                     </li>
                     <li>
@@ -42,9 +45,10 @@
         <div class="banner">
             <span> Profissionalismo e Excelência</span>
             <h1> Barber Shop</h1>
-            <span> O melhor lugar para cuida do seu estilo</span>
+            <span> O melhor lugar para cuidar do seu estilo</span>
             <img src="images/much-img.png" alt="barber shop">
-    </section>
+        </div>
+    </section> <!-- Responsividade "feita" -->
 
     <section id="about" class="about">
             <div class="container">
@@ -106,7 +110,7 @@
                 </div>
             </div>
 
-    </section>
+    </section> <!-- Responsividade "feita" -->
 
     <section id="services" class="services">
         <div class="container">
@@ -147,9 +151,9 @@
                         dicta cum necessitatibus nulla omnis minima natus
                         eveniet, accusamus consectetur.</p>
                 </div>
+            </div>
         </div>
-        </div>
-    </section>
+    </section> <!-- Responsividade "feita" -->
 
     <section id="agendamento" class="agendamento">
         <div class="container">
@@ -183,52 +187,66 @@
                 </div>
 
                 <div class="input-wrapper">
-                    <label> Mensagem: </label>
+                    <label id="msg"> Mensagem: </label>
                     <textarea></textarea>
                 </div>
 
                 <button> Enviar</button>
             </form>
         </div>
-    </section>
+    </section> <!-- Responsividade "feita" -->
 
     <section id="gallery" class="gallery">
         <div class="container">
             <h2> Galeria de fotos </h2>
             <img src="images/heading-ic.png" alt="Galeria de fontos">
             
-            <div class="gallery-wrapper">    
-                <div>
-                    <img src="images/gallery-img1.png" alt="Galeria">
-                </div>
+            <div class="gallery-wrapper">  
+                    <div>
+                        <img src="images/gallery-img1.png" alt="Galeria">
+                    </div>
 
-                <div>
-                    <img src="images/gallery-img2.png" alt="Galeria">
-                </div>
-                
-                <div>
-                    <img src="images/gallery-img3.png" alt="Galeria">
-                </div>
+                    <div>
+                        <img src="images/gallery-img2.png" alt="Galeria">
+                    </div>
+                    
+                    <div>
+                        <img src="images/gallery-img3.png" alt="Galeria">
+                    </div>
+          
+                    <div>
+                        <img src="images/gallery-img4.png" alt="Galeria">
+                    </div>
 
-                <div>
-                    <img src="images/gallery-img4.png" alt="Galeria">
-                </div>
+                    <div>
+                        <img src="images/gallery-img5.png" alt="Galeria">
+                    </div>
 
-                <div>
-                    <img src="images/gallery-img5.png" alt="Galeria">
-                </div>
-
-                <div>
-                    <img src="images/gallery-img6.png" alt="Galeria">
-                </div>
-
-                <div>
-                    <img src="images/gallery-img7.png" alt="Galeria">
-                </div>
+                    <div>
+                        <img src="images/gallery-img6.png" alt="Galeria">
+                    </div>
+            
+                    <div>
+                        <img src="images/gallery-img7.png" alt="Galeria">
+                    </div>
             </div>
         </div>
-    </section>
+    </section> <!-- Responsividade "feita" -->
 
+    <div class="error">
+        <h3> 
+            Não consgue ver as imagens? <br>Por favor veja elas clicando no botão 
+            a baixo:
+        </h3>
+
+        <button>
+            <a href="img-pagDois/index.html"> 
+                Clique aqui  
+            </a>
+        </button>
+   
+    </div> <!-- Responsividade "feita" -->
+    
     <section id="location" class="location">
         <div class="container">
             <div class="head">
@@ -283,6 +301,8 @@
         <footer class="footer-f">
             @2022 Barber Shop - Todos os direiros reservados
         </footer>
-    </section>
+    </section> 
+  
+    <script src="Script/main.js"></script> 
 </body>
 </html>

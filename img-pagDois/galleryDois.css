@@ -1,0 +1,53 @@
+:root {
+    --color-primary: #917758;
+    --color-secundary: #3C2915;
+    --color-primary-light: #f5eee6;
+}
+
+/****************
+*   Gallery
+*****************/
+
+body {
+    background-color: var(--color-primary-light);
+}
+
+.gallery {
+    padding: 100px 0;
+    background-color: var(--color-primary-light);
+}
+
+.gallery h2 {
+    text-align: center;
+    color: var(--color-secundary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery .gallery-wrapper {
+    height: 80px;
+}
+
+.gallery .gallery-wrapper div {
+    margin-top: 50px;
+}
+
+.gallery .gallery-wrapper div img {
+    width: 40%;
+    height: 20%;
+}
+
+/****************
+*  responsividade
+*****************/
+
+@media (max-width: 967px) {
+    
+    
+}

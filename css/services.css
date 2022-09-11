@@ -1,0 +1,53 @@
+/***************
+*   Services
+***************/
+
+.services {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-primary-light);
+}
+
+.services h2 {
+    color: var(--color-secundary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.services .boxes {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.services .box {
+    border: 3px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
+}
+
+.services .box h4 {
+    color: var(--color-secundary);
+    margin-top: 30px;
+}
+
+.services .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/*******************
+*   Resopnsividade
+********************/
+
+@media (max-width: 895px) {
+    .services .boxes {
+        flex-direction: column;
+    }
+
+    .services h2 {
+        font-size: 40px;
+    }
+}
