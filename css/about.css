@@ -1,9 +1,7 @@
 /************
 *    ABOUT
 *************/
-html, body {
-    overflow: hidden;
-}
+
 
 .about {
     background-color: var(--color-primary);
